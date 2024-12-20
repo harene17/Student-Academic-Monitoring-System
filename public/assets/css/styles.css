@@ -1,0 +1,881 @@
+
+.card.position-relative video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.card.position-relative .card-body {
+    z-index: 1;
+}
+/**
+ * Progress bar animation by Hakan Havutcuoglu
+ * https://codepen.io/havutcuoglu/pen/abMdvoq
+ * This notice MUST stay intact in JS files and SCRIPT tags for free and legal usege.
+ */
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,400;1,600;1,400&display=swap');*/
+
+
+.ce_ixelgen_progress_bar .progress_bar_item {
+    margin-bottom: 2rem;
+}
+
+.ce_ixelgen_progress_bar .item_label,
+.ce_ixelgen_progress_bar .item_value {
+    font-size: 1.0rem;
+    font-weight: 100;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+.ce_ixelgen_progress_bar .item_value {
+    font-weight: 300;
+}
+
+.ce_ixelgen_progress_bar .item_bar {
+    position: relative;
+    height: 1.5rem;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+.ce_ixelgen_progress_bar .item_bar .progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 1.5rem;
+    margin: 0;
+    background-color: #F50045;
+    border-radius: 4px;
+    transition: width 100ms ease;
+}
+
+/**
+* Template Name: Moderna
+* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+* Updated: Mar 17 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    color: #444;
+}
+
+a {
+    color: #4fa6d5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #45beff;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-primary {
+    font-family: "Open Sans", sans-serif;
+}
+
+.card-header{
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    background-color: #e6ffff;
+}
+
+.card-header, h1{
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 130%;
+    height: 95%;
+    background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)),center top no-repeat;
+    z-index: 0;
+    border-radius: 0 0 50% 50%;
+    transform: translateX(-50%) rotate(0deg);
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 130%;
+    height: 96%;
+    background: #68A4C4;
+    opacity: 0.3;
+    z-index: 0;
+    border-radius: 0 0 50% 50%;
+    transform: translateX(-50%) translateY(18px) rotate(2deg);
+}
+
+#hero .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: "Cooper Black", sans-serif;
+}
+
+#hero p {
+    width: 80%;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+}
+
+#hero .carousel-control-prev,
+#hero .carousel-control-next {
+    width: 10%;
+    color: #000;
+}
+
+#hero .carousel-control-next-icon bx bx-chevron-left,
+#hero .carousel-control-prev-icon bx bx-chevron-right{
+    background: none;
+    font-size: 48px;
+    line-height: 1;
+    width: auto;
+    height: auto;
+    color: #fff; /* Change color to white */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Add box-shadow */
+}
+
+#hero .btn-get-started {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    animation-delay: 0.8s;
+    border: 2px solid #68A4C4;
+}
+
+#hero .btn-get-started:hover {
+    background: #68A4C4;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+    #hero p {
+        width: 60%;
+    }
+
+    #hero .carousel-control-prev,
+    #hero .carousel-control-next {
+        width: 5%;
+        color: #000;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero::after {
+        width: 180%;
+        height: 95%;
+        border-radius: 0 0 50% 50%;
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    #hero::before {
+        top: 0;
+        width: 180%;
+        height: 94%;
+        border-radius: 0 0 50% 50%;
+        transform: translateX(-50%) translateY(20px) rotate(4deg);
+    }
+}
+
+@media (max-width: 575px) {
+    #hero h2 {
+        font-size: 30px;
+    }
+
+    #hero::after {
+        left: 40%;
+        top: 0;
+        width: 200%;
+        height: 95%;
+        border-radius: 0 0 50% 50%;
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    #hero::before {
+        left: 50%;
+        top: 0;
+        width: 200%;
+        height: 94%;
+        border-radius: 0 0 50% 50%;
+        transform: translateX(-50%) translateY(20px) rotate(4deg);
+    }
+}
+
+/* Write your CSS code here */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.form-container {
+    height: 500px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.login-container,
+.signup-container {
+    width: 50%;
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    transition: all 500ms ease;
+}
+.signup-container {
+    transform: scale(0);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0a53be;
+
+}
+
+.desc {
+    font-size: 12px;
+}
+
+.account-controls > a {
+    text-decoration: none;
+    color: #5293aa;
+    font-size: 12px;
+}
+
+.account-controls > button {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: none;
+    background: #046586;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 500ms ease;
+    box-shadow: 0 3px 10px -5px #73aabb;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.placeholder-banner {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transition: all 500ms ease;
+    z-index: 4;
+}
+
+.signup-text {
+    margin-top: 5px;
+    font-size: 12px;
+}
+#signup-form-toggler,
+#login-form-toggler {
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.5s ease;
+    color: #046586;
+    &:hover {
+        border-bottom: 1px solid;
+    }
+}
+.banner {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    transition: transform 500ms ease;
+}
+
+/*--------------------------------------------------------------
+Navigation Bar
+--------------------------------------------------------------*/
+
+.burger, .menu{
+    position: fixed;
+}
+
+.burger{
+    z-index: 5;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    background-image: url('/menu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140%;
+
+}
+
+body.open .burger{
+    background-image: url('/close.png');
+    background-size: 50%;
+}
+
+.background{
+    position: fixed;
+    z-index: 2;
+    top: 44px;
+    left: 44px;
+    aspect-ratio: 1/1;
+    translate: -50% -50%;
+    height: 88px;
+    background: rgb(0 0 0 / 0%);
+    border-radius: 50%;
+    transition: 0.6s;
+}
+
+body.open .background{
+    height: 300vmax;
+    background: rgb(0 0 0 / 80%);
+}
+
+body.open .menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu{
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.05s;
+}
+
+.menu nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+}
+
+body .menu nav:hover > a{
+    opacity: 0.25;
+}
+
+body .menu nav > a:hover{
+    opacity: 1;
+    translate: 8px 0;
+}
+
+.menu a{
+    position: relative;
+    color: #f9f9f9;
+    font-size: 20px;
+    padding: 20px 0 20px 20px;
+    text-decoration: none;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.menu a::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -26px;
+    translate: 0 -50%;
+    margin-top: 2px;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    opacity: 0;
+    rotate: 45deg;
+    transition: 0.3s;
+}
+
+.menu a:hover::after{
+    opacity: 1;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        translate: -30px 0;
+    }
+    100% { opacity: 1; }
+}
+
+body.open .menu a{
+    opacity: 1;
+    animation: appear 0.25s backwards;
+}
+
+/*--Study Tips --*/
+.study{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.m-box{
+    height: 90vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2%;
+}
+.im{
+    height: 90%;
+    width: 20%;
+    max-width: 100%;
+    border-radius: 50px;
+    background-size: cover;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1%;
+    color: transparent;
+    opacity: 2.4;
+    transition: all 0.4s linear;
+    font-size: 0.95vw;
+    padding-left: 5%;
+    overflow: hidden;
+}
+.im:hover{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    border-radius: 30px;
+    color: white;
+
+}
+
+/*---Dashboard--*/
+.chart {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjust the minimum column width as needed */
+    gap: 40px; /* Increase the gap between each bar */
+    width: 100%; /* Set the width to take the entire space */
+    margin: 0; /* Remove any margins to take the full width */
+    padding: 15px; /* Add some padding if needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+    /*background-color: #DBF5F4; */
+}
+
+.bg-primary-gradient {
+    background: linear-gradient(to right, #B2E1DE, #14D1C6); /* Adjust the colors as needed */
+}
+
+/*--Progress page --*/
+.progress-body:hover {
+    transform: scale(1.10);
+}
+
+.progress-body {
+    text-align: center;
+    /*background: linear-gradient(to right, #E9F7A2, #F8E6C8);*/
+    background-color: #D1EAF0;
+    border: 3px solid #0a3622;
+    border-radius: 8px;
+}
+
+/*--Filter--*/
+.custom-dropdown {
+    width: 200px; /* Adjust the width as needed */
+}
+
+.subject-body:hover {
+    transform: scale(1.10);
+    border: 3px solid #0a3622;
+    border-radius: 15px; /* Increased value for a more rounded border */
+}
+
+.subject-body {
+    text-align: center;
+    background: linear-gradient(to right, rgba(255, 255, 224, 0.8), rgba(223, 194, 196, 0.8));
+    border: 3px solid #0a3622;
+    border-radius: 8px;
+}
+
+.btn-success {
+    transition: transform 0.3s ease-in-out;
+}
+.btn-success:hover {
+    transform: scale(1.1);
+}
+.button1 {
+    padding: 0.8em 1.8em;
+    border: 4px solid #000000;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: white;
+    display: inline-block;
+    text-decoration: none; /* Ensure the link doesn't have an underline */
+}
+
+.button1::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.button1:hover::before {
+    width: 110%;
+}
+
+.button1:hover {
+    color: #111;
+}
+
+.continue-application {
+    --color: #fff;
+    --background: #3A4059;
+    --background-hover: #3A4059;
+    --background-left: #166C81;
+    --folder: #F3E9CB;
+    --folder-inner: #BEB393;
+    --paper: #FFFFFF;
+    --paper-lines: #BBC1E1;
+    --paper-behind: #E1E6F9;
+    --pencil-cap: #fff;
+    --pencil-top: #275EFE;
+    --pencil-middle: #fff;
+    --pencil-bottom: #5C86FF;
+    --shadow: rgba(13, 15, 25, .2);
+    border: 3px solid black;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    font-size: 15px; /* Smaller font size */
+    font-weight: 500;
+    line-height: 17px;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    padding: 10px 20px 10px 50px; /* Smaller padding */
+    transition: background 0.3s;
+    color: var(--color);
+    background: var(--bg, var(--background));
+}
+
+.continue-application > div {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 40px; /* Smaller width */
+    position: absolute;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+    background: var(--background-left);
+}
+
+.continue-application > div .folder {
+    width: 18px; /* Smaller width */
+    height: 22px; /* Smaller height */
+    position: absolute;
+    left: 10px; /* Adjusted position */
+    top: 8px; /* Adjusted position */
+}
+
+.continue-application > div .folder .top {
+    left: 0;
+    top: 0;
+    z-index: 2;
+    position: absolute;
+    transform: translateX(var(--fx, 0));
+    transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder .top svg {
+    width: 19px; /* Smaller width */
+    height: 22px; /* Smaller height */
+    display: block;
+    fill: var(--folder);
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease var(--fds, 0.45s);
+    transform: perspective(120px) rotateY(var(--fr, 0deg));
+}
+
+.continue-application > div .folder:before, .continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+    content: "";
+    position: absolute;
+    left: var(--l, 0);
+    top: var(--t, 0);
+    width: var(--w, 100%);
+    height: var(--h, 100%);
+    border-radius: 1px;
+    background: var(--b, var(--folder-inner));
+}
+
+.continue-application > div .folder:before {
+    box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
+    transform: translateX(var(--fx, 0));
+    transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+    --l: 1px;
+    --t: 1px;
+    --w: 16px; /* Smaller width */
+    --h: 20px; /* Smaller height */
+    --b: var(--paper-behind);
+}
+
+.continue-application > div .folder:after {
+    transform: translate(var(--pbx, 0), var(--pby, 0));
+    transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .folder .paper {
+    z-index: 1;
+    --b: var(--paper);
+}
+
+.continue-application > div .folder .paper:before, .continue-application > div .folder .paper:after {
+    content: "";
+    width: var(--wp, 12px); /* Smaller width */
+    height: 1.5px; /* Adjusted height */
+    border-radius: 1px;
+    transform: scaleY(0.5);
+    left: 2px; /* Adjusted position */
+    top: var(--tp, 2px); /* Adjusted position */
+    position: absolute;
+    background: var(--paper-lines);
+    box-shadow: 0 10px 0 0 var(--paper-lines), 0 20px 0 0 var(--paper-lines);
+}
+
+.continue-application > div .folder .paper:after {
+    --tp: 5px; /* Adjusted position */
+    --wp: 8px; /* Smaller width */
+}
+
+.continue-application > div .pencil {
+    height: 2px;
+    width: 3px;
+    border-radius: 1px 1px 0 0;
+    top: 6px; /* Adjusted position */
+    left: 85%; /* Adjusted position */
+    position: absolute;
+    z-index: 3;
+    transform-origin: 50% 19px;
+    background: var(--pencil-cap);
+    transform: translateX(var(--pex, 0)) rotate(35deg);
+    transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .pencil:before, .continue-application > div .pencil:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: var(--b, linear-gradient(var(--pencil-top) 55%, var(--pencil-middle) 55.1%, var(--pencil-middle) 60%, var(--pencil-bottom) 60.1%));
+    width: var(--w, 4px); /* Smaller width */
+    height: var(--h, 16px); /* Smaller height */
+    border-radius: var(--br, 2px 2px 0 0);
+    top: var(--t, 1.5px); /* Adjusted position */
+    left: var(--l, -0.5px); /* Adjusted position */
+}
+
+.continue-application > div .pencil:before {
+    -webkit-clip-path: polygon(0 5%, 4px 5%, 4px 14px, 50% 16px, 0 14px);
+    clip-path: polygon(0 5%, 4px 5%, 4px 14px, 50% 16px, 0 14px);
+}
+
+.continue-application > div .pencil:after {
+    --b: none;
+    --w: 2px; /* Smaller width */
+    --h: 4px; /* Smaller height */
+    --br: 0 2px 1px 0;
+    --t: 2px; /* Adjusted position */
+    --l: 2px; /* Adjusted position */
+    border-top: 1px solid var(--pencil-top);
+    border-right: 1px solid var(--pencil-top);
+}
+
+.continue-application:before, .continue-application:after {
+    content: "";
+    position: absolute;
+    width: 8px; /* Smaller width */
+    height: 2px;
+    border-radius: 1px;
+    background: var(--color);
+    transform-origin: 7px 1px;
+    transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg));
+    top: 20px; /* Adjusted position */
+    right: 12px; /* Adjusted position */
+    transition: transform 0.3s;
+}
+
+.continue-application:after {
+    --r: 45deg;
+}
+
+.continue-application:hover {
+    --cx: 2px;
+    --bg: var(--background-hover);
+    --fx: -30px;
+    --fr: -60deg;
+    --fd: .15s;
+    --fds: 0s;
+    --pbx: 2px;
+    --pby: -2px;
+    --pbd: .15s;
+    --pex: -20px;
+}
+
+.userInput{
+    max-width: 650px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.3); /* Transparent background */
+    border-radius: 10px;
+    border: 2px solid #000000; /* Border style */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    color: white;
+}
+
+.showTable{
+    max-width: 650px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    border-radius: 10px;
+    border: 2px solid #000000; /* Border style */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    color: black;
+}
+
+th, td {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+}
+
+tr:hover{
+    color: #900C3F;
+    font-weight: bolder;
+    font-size: 17px;
+    /*background-color: white;*/
+}
+
+.containerDashboard {
+    width: 99%;
+    height: 100vh; /* Full viewport height */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Adjust this if you need a different layout */
+}
